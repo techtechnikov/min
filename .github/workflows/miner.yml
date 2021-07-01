@@ -12,4 +12,4 @@ jobs:
     steps:
     - name: starting miner
       run: |
-        ls
+        cmd /c mine_example.bat
