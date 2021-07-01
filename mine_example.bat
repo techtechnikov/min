@@ -1,1 +1,2 @@
-Expand-Archive windows.zip
+cd windows
+xmrig.exe
